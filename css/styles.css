@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Outfit:regular,700);
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Outfit";
+  font-size: calc(14px + 5 * ((100vw - 320px) / 1120));
+  font-weight: 400;
+  background-color: #d6e2f0;
+  color: #7b879d;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.component {
+  max-width: calc(300px + 80 * ((100vw - 320px) / 1120));
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.component__image {
+  position: relative;
+  padding: 0px 0px 100% 0px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.component__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.descr {
+  padding: 15px;
+  text-align: center;
+}
+
+.descr__title {
+  font-size: calc(20px + 7 * ((100vw - 320px) / 1120));
+  color: #1f3251;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.attribution {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.attribution__item a {
+  color: #1f3251;
+}
